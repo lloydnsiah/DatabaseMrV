@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:id="@+id/l1">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Amount"
+                android:layout_weight="2"
+                android:id="@+id/edt_amount"
+                android:maxLines="1"
+                android:background="@null"
+                android:textSize="22sp"
+                android:maxLength="10"
+                android:inputType="numberDecimal"
+                android:layout_marginLeft="40dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="GHS"
+                android:layout_marginRight="20dp"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter ID"
+            android:id="@+id/edt_id"
+            android:layout_below="@id/l1"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@null"
+            android:maxLines="1"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="22sp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_id"
+            android:text="SAVE"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:id="@+id/btn_save"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_save"
+            android:text="View Reports"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:id="@+id/btn_report"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
